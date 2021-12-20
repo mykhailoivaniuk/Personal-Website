@@ -3,10 +3,12 @@ import Section from "../components/section";
 import { ProjectGridItem } from "../components/grid-item";
 import pathFindingThumb from '../public/projects/pathFinder2.png'
 import leetTrackThumb from '../public/projects/LeetTrack.png'
+import Layout from '../components/layouts/article'
 
 
 const Projects = () => {
   return (
+  <Layout>
     <Container>
       <Heading as='h3' fontSize={20} my={4}>
         Projects
@@ -25,6 +27,7 @@ const Projects = () => {
         </Section>
       </SimpleGrid>
     </Container>
+  </Layout>
   )
 }
 

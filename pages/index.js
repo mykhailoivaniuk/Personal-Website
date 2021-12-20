@@ -4,8 +4,12 @@ import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ExternalLinkIcon,ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection,BioYear,Bio2Years,BioSeason } from '../components/bio';
+import Layout from '../components/layouts/article';
+
+
 const Page = () => {
   return (
+  <Layout>
     <Container>
       <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.500','whiteAlpha.200')} p={3} mb={6} align='center'>
       Hello, I am junior studying CS at Northwestern!
@@ -72,6 +76,7 @@ const Page = () => {
     <Heading as='h3' variant='section-title'> Technologies I&apos;ve worked with </Heading>
     </Section>
     </Container>
+  </Layout>
     
   )
 }
