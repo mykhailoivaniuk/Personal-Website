@@ -6,7 +6,7 @@ const NotFound = () => {
     <Container>
       <Box align='center' my={3}>
         <Heading as='h1'>Page Not Found</Heading>
-        <Text> The page you&apos;re looking for does not exist yet. </Text>
+        <Text> The page you&apos;re looking for was not found. </Text>
       </Box>
       <Divider my={6}/>
 
