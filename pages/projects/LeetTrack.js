@@ -3,7 +3,6 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Title,ProjectImage,Meta } from "../../components/project";
 import P from '../../components/paragraph';
 import Layout from '../../components/layouts/article';
-import { IoLogoGithub } from 'react-icons/io5'
 import {GoOctoface} from "react-icons/go";
 
 
@@ -28,8 +27,8 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <Meta>Source Code</Meta>
-            <span>
-            <Link href='https://leettrack-411d7.web.app/' isExternal display='inline-flex'> Source &nbsp;<GoOctoface mx='2px'/></Link>
+            <span display='inline-flex'>
+            <Link href='https://leettrack-411d7.web.app/' isExternal display='inline-flex'> Source &nbsp; <GoOctoface mx='2px'/> </Link>
             </span>
           </ListItem>
         </List>

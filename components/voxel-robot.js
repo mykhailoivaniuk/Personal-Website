@@ -3,8 +3,8 @@ import { Box, Spinner} from '@chakra-ui/react';
 import * as THREE from 'three';
 import { loadGltfModel } from '../lib/model';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import { render } from 'react-dom';
-import { animate } from 'framer-motion';
+// import { render } from 'react-dom';
+// import { animate } from 'framer-motion';
 
 const easeOutCirc = (x) => {
 

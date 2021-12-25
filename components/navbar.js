@@ -16,6 +16,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeButton from './theme-button'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
   const active = path === href
@@ -76,9 +77,28 @@ const Navbar = props => {
             <LinkItem href="/posts" path={path}> 
               Posts 
             </LinkItem>
-            <LinkItem href="/mycv" path={path}> 
+            <LinkItem
+              target="_blank"
+              href="https://drive.google.com/file/d/1LWJcBOtQIHVF_WzOGZAPdRbLx3IqPJPC/view?usp=sharing"
+              path={path}
+              display="inline-flex"
+              alignItems="center"
+              style={{ gap: 4 }}
+              pl={2}> 
               My CV 
             </LinkItem>
+            <LinkItem
+            target="_blank"
+            href="https://github.com/mykhailoivaniuk/Personal-Website"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub />
+            Source
+          </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
@@ -98,9 +118,15 @@ const Navbar = props => {
                 <NextLink href='/projects' passHref>
                   <MenuItem as={Link}> Projects </MenuItem>
                 </NextLink>
-                <NextLink href='/mycv' passHref>
-                  <MenuItem as={Link}> My CV</MenuItem>
+                <NextLink href='/posts' passHref>
+                  <MenuItem as={Link}> Posts </MenuItem>
                 </NextLink>
+                <MenuItem as={Link} target='_blank' href='https://drive.google.com/file/d/1LWJcBOtQIHVF_WzOGZAPdRbLx3IqPJPC/view?usp=sharing'>
+                   My CV
+                </MenuItem>
+                <MenuItem as={Link} target='_blank' href='https://github.com/mykhailoivaniuk/Personal-Website'>
+                   View Source
+                </MenuItem>
 
               </MenuList>
             </Menu>
