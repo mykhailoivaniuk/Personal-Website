@@ -92,25 +92,15 @@ const Page = () => {
       </BioSection>
     </Section>
     <Section delay={0.3}>
-      <Heading as='h3' variant='section-title'> 
+      <Heading as='h3' variant='section-title' my={8}> 
         Technologies I&apos;ve worked with 
       </Heading>
       <SimpleGrid columns={6} gap={6}>
-        <Section delay={0.3}>
           <TechnologyGridItem title='java' thumbnail={javaLogo}/>
-        </Section>
-        <Section delay={0.3}>
           <TechnologyGridItem title='js' thumbnail={jsLogo}/>
-        </Section>
-        <Section delay={0.3}>
           <TechnologyGridItem title='python' thumbnail={pythonLogo}/>
-        </Section>
-        <Section delay={0.3}>
           <TechnologyGridItem title='postgre' thumbnail={postgreLogo}/>
-        </Section>
-        <Section delay={0.3}>
           <TechnologyGridItem title='react' thumbnail={reactLogo}/>
-        </Section>
       </SimpleGrid>
     </Section>
     <Section delay={0.4}>

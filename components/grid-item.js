@@ -2,6 +2,7 @@ import NextLink from 'next/link';
 import Image from 'next/image';
 import {Box,Text,LinkBox,LinkOverlay} from '@chakra-ui/react'
 import { Global } from '@emotion/react';
+import { motion } from 'framer-motion';
 
 
 export const GridItem = ({children,href,title,thumbnail}) => {
@@ -44,10 +45,19 @@ export const ProjectGridItem = ({children, id, title, thumbnail}) => {
 export const TechnologyGridItem = ({title, thumbnail}) => {
   return (
     <Box w='100%' align='center'>
-        <Image src={thumbnail}
+      <motion.div className="technologyGridItem" whileHover={{
+                position: 'relative',
+                zIndex: 1,
+                scale: 1.3  ,
+                transition: {
+                  duration: .2
+                }
+              }}>
+          <Image src={thumbnail}
                 alt={title}
                 className='grid-item-thumbnail'
                 placeholder='empty'/>
+        </motion.div>
     </Box>
   )
 }
