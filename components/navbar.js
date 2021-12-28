@@ -89,7 +89,7 @@ const Navbar = props => {
             </LinkItem>
             <LinkItem
             target="_blank"
-            href="https://github.com/mykhailoivaniuk/Personal-Website"
+            href="https://github.com/mykhailoivaniuk/projects"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -97,7 +97,7 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-            Source
+            Github
           </LinkItem>
         </Stack>
 
