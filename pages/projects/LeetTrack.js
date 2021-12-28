@@ -1,9 +1,9 @@
-import { Container,Badge,List,ListItem,Link } from "@chakra-ui/react";
+import { Container,Badge,List,ListItem,Link,Button,Icon } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Title,ProjectImage,Meta } from "../../components/project";
 import P from '../../components/paragraph';
 import Layout from '../../components/layouts/article';
-import {GoOctoface} from "react-icons/go";
+import {IoLogoGithub} from "react-icons/io";
 
 
 const Project = () => {
@@ -28,7 +28,11 @@ const Project = () => {
           <ListItem>
             <Meta>Source Code</Meta>
             <span display='inline-flex'>
-            <Link href='https://leettrack-411d7.web.app/' isExternal display='inline-flex'> Source &nbsp; <GoOctoface mx='2px'/> </Link>
+            <Link href='https://leettrack-411d7.web.app/' target='_blank' isExternal> 
+              <Button variant='ghost' colorScheme='purple' rightIcon={<Icon as={IoLogoGithub}/>}>
+                Source
+              </Button>
+            </Link>
             </span>
           </ListItem>
         </List>

@@ -41,6 +41,17 @@ export const ProjectGridItem = ({children, id, title, thumbnail}) => {
   )
 }
 
+export const TechnologyGridItem = ({title, thumbnail}) => {
+  return (
+    <Box w='100%' align='center'>
+        <Image src={thumbnail}
+                alt={title}
+                className='grid-item-thumbnail'
+                placeholder='empty'/>
+    </Box>
+  )
+}
+
 export const GridItemStyle = () => {
   return (
     <Global styles={`

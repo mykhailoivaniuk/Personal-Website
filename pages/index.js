@@ -1,10 +1,17 @@
 import NextLink from 'next/link';
-import {Container,Button,Box,Heading,Image,useColorModeValue,Link} from '@chakra-ui/react';
+import {Container,Button,Box,Heading,Image,useColorModeValue,Link,Text, ListItem,List,Icon,SimpleGrid} from '@chakra-ui/react';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ExternalLinkIcon,ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection,BioYear,Bio2Years,BioSeason } from '../components/bio';
 import Layout from '../components/layouts/article';
+import { IoLogoGithub, IoLogoTwitter} from 'react-icons/io';
+import { TechnologyGridItem } from '../components/grid-item';
+import javaLogo from '../public/images/java.svg'
+import pythonLogo from '../public/images/python.svg'
+import reactLogo from '../public/images/react.svg'
+import jsLogo from '../public/images/javascriptlogo.svg'
+import postgreLogo from '../public/images/postgresql.svg'
 
 
 const Page = () => {
@@ -19,6 +26,11 @@ const Page = () => {
           <Heading as='h2' variant="page-title">
             Misha Ivaniuk
           </Heading>
+          <Text> You can reach me at {' '}
+          <Link href='mailto:mykhailo.ivaniuk@gmail.com' target='_blank' isExternal colorScheme='purple' color='purple.400'> 
+                mykhailo.ivaniuk@gmail.com
+          </Link>
+          </Text>
         </Box>
         <Box flexShrink={1}  
             mt={{base: 4, md: 0}} 
@@ -39,13 +51,13 @@ const Page = () => {
       <Paragraph> Junior majoring in Computer Science and Statistics with experience in Python,
             Javascript and Java interested in a way technology can be used to drive impact 
             in all industries. It all wasn&apos;t possible without{' '}
-            <Link href='https://www.ugs.foundation/' isExternal>
+            <Link href='https://www.ugs.foundation/' isExternal  color='purple.400'>
             Ukraine Global Scholars <ExternalLinkIcon mx='2px' />
             </Link>  
       </Paragraph>
       <Box align='center' my={4}>
         <NextLink href='/projects'>
-          <Button rightIcon={<ChevronRightIcon/>} colorScheme='teal'>
+          <Button rightIcon={<ChevronRightIcon/>} colorScheme='purple'>
             My Projects
           </Button>
         </NextLink>
@@ -61,19 +73,74 @@ const Page = () => {
       </BioSection>
       <BioSection>
         <BioSeason>Fall 2021</BioSeason>Peer mentor for {' '}
-        <Link href='https://catalogs.northwestern.edu/undergraduate/courses-az/stat/' isExternal>Stat303 - Data Science</Link>
+        <Link href='https://catalogs.northwestern.edu/undergraduate/courses-az/stat/' 
+              isExternal  
+              color='purple.400'>
+        Stat303 - Data Science
+        </Link>
       </BioSection>
       <BioSection>
         <BioSeason>Wint 2022</BioSeason>Peer mentor for {' '}
-        <Link href='https://www.mccormick.northwestern.edu/computer-science/academics/courses/descriptions/397-497-23.html' isExternal>
-        CS497 - Data Privacy</Link>
+        <Link href='https://www.mccormick.northwestern.edu/computer-science/academics/courses/descriptions/397-497-23.html' 
+              isExternal  
+              color='purple.400'>
+        CS497 - Data Privacy
+        </Link>
       </BioSection>
       <BioSection>
         <BioYear>2022</BioYear>Intern at Palantir Technologies
       </BioSection>
     </Section>
-    <Section>
-    <Heading as='h3' variant='section-title'> Technologies I&apos;ve worked with </Heading>
+    <Section delay={0.3}>
+      <Heading as='h3' variant='section-title'> 
+        Technologies I&apos;ve worked with 
+      </Heading>
+      <SimpleGrid columns={6} gap={6}>
+        <Section delay={0.3}>
+          <TechnologyGridItem title='java' thumbnail={javaLogo}/>
+        </Section>
+        <Section delay={0.3}>
+          <TechnologyGridItem title='js' thumbnail={jsLogo}/>
+        </Section>
+        <Section delay={0.3}>
+          <TechnologyGridItem title='python' thumbnail={pythonLogo}/>
+        </Section>
+        <Section delay={0.3}>
+          <TechnologyGridItem title='postgre' thumbnail={postgreLogo}/>
+        </Section>
+        <Section delay={0.3}>
+          <TechnologyGridItem title='react' thumbnail={reactLogo}/>
+        </Section>
+      </SimpleGrid>
+    </Section>
+    <Section delay={0.4}>
+      <Heading as='h3' variant='section-title'>
+        On the web
+      </Heading>
+      <List>
+        <ListItem>
+          <Link isExternal
+                target='_blank'
+                href='https://github.com/mykhailoivaniuk/projects'>
+          <Button variant='ghost'
+                  colorScheme='purple'
+                  leftIcon={<Icon as={IoLogoGithub}/>}>
+            @mykhailoivaniuk
+          </Button>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link isExternal
+                target='_blank'
+                href='https://twitter.com/IvaniukMisha'>
+          <Button variant='ghost'
+                  colorScheme='purple'
+                  leftIcon={<Icon as={IoLogoTwitter}/>}>
+            @mykhailoivaniuk
+          </Button>
+          </Link>
+        </ListItem>
+      </List>
     </Section>
     </Container>
   </Layout>

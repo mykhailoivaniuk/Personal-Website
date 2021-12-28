@@ -1,4 +1,4 @@
-import { Container,SimpleGrid,Divider,Heading } from "@chakra-ui/react";
+import { Container,SimpleGrid,Heading } from "@chakra-ui/react";
 import Section from "../components/section";
 import { ProjectGridItem } from "../components/grid-item";
 import pathFindingThumb from '../public/projects/pathFinder2.png'
@@ -13,7 +13,6 @@ const Projects = () => {
       <Heading as='h3' fontSize={20} my={4}>
         Projects
       </Heading>
-
       <SimpleGrid columns={[1,1,2]} gap={6}>
         <Section delay={0.1}>
         <ProjectGridItem id='LeetTrack' title='Leetcode Tracker' thumbnail={leetTrackThumb}>
