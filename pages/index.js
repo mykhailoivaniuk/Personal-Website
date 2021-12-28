@@ -1,5 +1,5 @@
 import NextLink from 'next/link';
-import {Container,Button,Box,Heading,Image,useColorModeValue,Link, ListItem,List,Icon,SimpleGrid} from '@chakra-ui/react';
+import {Container,Button,Box,Heading,Image,useColorModeValue,Link, ListItem,List,Icon,SimpleGrid,Text} from '@chakra-ui/react';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ExternalLinkIcon,ChevronRightIcon } from '@chakra-ui/icons';
@@ -26,8 +26,13 @@ const Page = () => {
           <Heading as='h2' variant="page-title">
             Misha Ivaniuk
           </Heading>
-          <Link href='mailto:mykhailo.ivaniuk@gmail.com' target='_blank' isExternal colorScheme='purple' color='purple.400'> 
+          <Link href='mailto:mykhailo.ivaniuk@gmail.com' target='_blank' isExternal colorScheme='purple'> 
+            <Text color = 'purple.400'
+                fontFamily='M PLUS Rounded 1c'
+                fontWeight='bold'
+                ml={0.5}>
                 mykhailo.ivaniuk@gmail.com
+            </Text>
           </Link>
         </Box>
         <Box flexShrink={1}  
