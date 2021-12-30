@@ -2,7 +2,7 @@ import NextLink from 'next/link';
 import {Container,Button,Box,Heading,Image,useColorModeValue,Link, ListItem,List,Icon,SimpleGrid,Text} from '@chakra-ui/react';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
-import { ExternalLinkIcon,ChevronRightIcon } from '@chakra-ui/icons';
+import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection,Bio2Years,BioFall,BioWinter,BioSummer } from '../components/bio';
 import Layout from '../components/layouts/article';
 import { IoLogoGithub, IoLogoTwitter} from 'react-icons/io';
@@ -19,7 +19,9 @@ const Page = () => {
   <Layout>
     <Container>
       <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.500','whiteAlpha.200')} p={3} mb={6} align='center'>
-      Hello, I am junior studying CS at Northwestern!
+        <Text fontWeight='bold' >
+          Hello, I am junior studying CS at Northwestern!
+        </Text>
       </Box>
       <Box display={{md: 'flex'}}>
         <Box flexGrow={1}>
@@ -51,12 +53,41 @@ const Page = () => {
       </Box>
     <Section delay={0.1}>
       <Heading as='h3' variant='section-title'> About me </Heading>
-      <Paragraph> Junior majoring in Computer Science and Statistics with experience in Python,
-            Javascript and Java interested in a way technology can be used to drive impact 
-            in all industries. It all wasn&apos;t possible without{' '}
-            <Link href='https://www.ugs.foundation/' isExternal  color='purple.400'>
-            Ukraine Global Scholars <ExternalLinkIcon mx='2px' />
-            </Link>  
+      <Paragraph> Hi, I am an undergraduate student at {' '}
+       <Link href='https://www.northwestern.edu/' color='purple.400' target='_blank'>
+       Northwestern University
+       </Link> from Ukraine. I am double-majoring in {' '}
+        <Link href='https://www.mccormick.northwestern.edu/computer-science/' target='_blank' color='purple.400'>
+        Computer Science
+        </Link> and {' '}
+        <Link href='https://www.math.northwestern.edu/' target='_blank' color='purple.400'>
+        Math
+        </Link>, as well as hoping to do a combined 
+        {' '}
+        <Link href='https://www.mccormick.northwestern.edu/academics/undergraduate/programs/honors-and-combined-degrees/combined-bachelors-masters-program/' 
+              target='_blank' 
+              color='purple.400'>
+        BS/MS 
+        </Link> program with Artificial Intelligence track.
+      </Paragraph>
+      <Paragraph>
+      This wouldn&apos;t have been possible without {' '}
+            <Link href='https://www.ugs.foundation/' 
+                  isExternal  
+                  color='purple.400'
+                  target='_blank'>
+             Ukraine Global Scholars 501(c)(3)
+             </Link> - a non-profit that assists selected students in applying to US schools. To 
+        give back, I helped select new cohorts, organize their summer bootcamp, and mentor students&apos; application process.
+      </Paragraph>
+      <Paragraph>
+      To learn about who influences me intellectually, {' '}
+            <Link href='https://twitter.com/IvaniukMisha' 
+                  isExternal  
+                  color='purple.400'
+                  target='_blank'>
+             follow me on Twitter! 
+            </Link> I don&apos;t usually post but I often like or repost things that interest me.
       </Paragraph>
       <Box align='center' my={4}>
         <NextLink href='/projects'>
