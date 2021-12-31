@@ -124,8 +124,8 @@ const Navbar = props => {
                 <MenuItem as={Link} target='_blank' href='https://drive.google.com/file/d/1LWJcBOtQIHVF_WzOGZAPdRbLx3IqPJPC/view?usp=sharing'>
                    My CV
                 </MenuItem>
-                <MenuItem as={Link} target='_blank' href='https://github.com/mykhailoivaniuk/Personal-Website'>
-                   View Source
+                <MenuItem as={Link} target='_blank' href='https://github.com/mykhailoivaniuk/projects'>
+                   My Github
                 </MenuItem>
 
               </MenuList>

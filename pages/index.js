@@ -3,7 +3,7 @@ import {Container,Button,Box,Heading,Image,useColorModeValue,Link, ListItem,List
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { BioSection,Bio2Years,BioFall,BioWinter,BioSummer } from '../components/bio';
+import { BioSection,BioYear } from '../components/bio';
 import Layout from '../components/layouts/article';
 import { IoLogoGithub, IoLogoTwitter} from 'react-icons/io';
 import { TechnologyGridItem } from '../components/grid-item';
@@ -100,10 +100,10 @@ const Page = () => {
     <Section delay={0.2}>
       <Heading as='h3' variant='section-title'> Short Bio </Heading>
       <BioSection>
-        <BioSummer>Summer 2022</BioSummer>Intern at Palantir Technologies
+        <BioYear>2022</BioYear>Intern at Palantir Technologies
       </BioSection>
       <BioSection>
-        <BioWinter>Winter 2022</BioWinter>Peer mentor for {' '}
+        <BioYear>2022</BioYear>Peer mentor for {' '}
         <Link href='https://www.mccormick.northwestern.edu/computer-science/academics/courses/descriptions/397-497-23.html' 
               isExternal  
               color='purple.400'>
@@ -111,7 +111,7 @@ const Page = () => {
         </Link>
       </BioSection>
       <BioSection>
-        <BioFall>Fall 2021</BioFall>Peer mentor for {' '}
+        <BioYear>2021</BioYear>Peer mentor for {' '}
         <Link href='https://catalogs.northwestern.edu/undergraduate/courses-az/stat/' 
               isExternal  
               color='purple.400'>
@@ -119,10 +119,10 @@ const Page = () => {
         </Link>
       </BioSection>
       <BioSection>
-        <Bio2Years>2020-2021</Bio2Years> Intern at Kargo Technologies
+        <BioYear>2020</BioYear>Intern at Kargo Technologies
       </BioSection>
       <BioSection>
-        <Bio2Years>2019-2023</Bio2Years> Combined BS/MS in Computer Science at Northwestern
+        <BioYear>2023</BioYear>BS/MS in Computer Science at &nbsp;Northwestern
       </BioSection>
     </Section>
     <Section delay={0.3}>
