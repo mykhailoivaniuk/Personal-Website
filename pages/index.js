@@ -160,7 +160,7 @@ const Page = () => {
           <Button variant='ghost'
                   colorScheme='purple'
                   leftIcon={<Icon as={IoLogoTwitter}/>}>
-            @mykhailoivaniuk
+            @IvaniukMisha
           </Button>
           </Link>
         </ListItem>
