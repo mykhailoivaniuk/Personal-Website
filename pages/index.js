@@ -5,7 +5,7 @@ import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection,BioYear } from '../components/bio';
 import Layout from '../components/layouts/article';
-import { IoLogoGithub, IoLogoTwitter} from 'react-icons/io';
+import { IoLogoGithub, IoLogoTwitter,IoLogoLinkedin} from 'react-icons/io';
 import { TechnologyGridItem } from '../components/grid-item';
 import javaLogo from '../public/images/java.svg'
 import pythonLogo from '../public/images/python.svg'
@@ -161,6 +161,17 @@ const Page = () => {
                   colorScheme='purple'
                   leftIcon={<Icon as={IoLogoTwitter}/>}>
             @IvaniukMisha
+          </Button>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link isExternal
+                target='_blank'
+                href='https://www.linkedin.com/in/mykhailoivaniuk/'>
+          <Button variant='ghost'
+                  colorScheme='purple'
+                  leftIcon={<Icon as={IoLogoLinkedin}/>}>
+            Misha Ivaniuk
           </Button>
           </Link>
         </ListItem>
