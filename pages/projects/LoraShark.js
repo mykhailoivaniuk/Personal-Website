@@ -1,4 +1,4 @@
-import { Container,Badge,List,ListItem,Link,Button,Icon } from "@chakra-ui/react";
+import { Container,List,ListItem,Link,Button,Icon } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Title,ProjectImage,Meta } from "../../components/project";
 import P from '../../components/paragraph';
@@ -25,8 +25,8 @@ const Project = () => {
           Internet of Things technologies have rapidly progressed during last years. 
           In response to the rapid growth of the IoT, Low Power Wide Area Network 
           (LPWAN) technologies have gained prominence. LoRaWan is one of the protocols used to enable LPWAN
-          ,however it lacks a tool that lets programmer easily receive and decode LoRaWan packets. We built
-          a decoder for Wireshark because of it's wide adoption and ease of usage. For technical details read our
+          , however, it lacks a tool that lets programmer easily receive and decode LoRaWan packets. We built
+          a decoder for Wireshark because of it&apos;s wide adoption and ease of usage. For technical details read our
           writeup below!
         </P>
         <List my={4}>
