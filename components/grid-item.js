@@ -30,8 +30,7 @@ export const ProjectGridItem = ({children, id, title, thumbnail}) => {
         <LinkBox cursor='pointer'>
         <Image src={thumbnail}
                 alt={title}
-                className='grid-item-thumbnail'
-                placeholder='blur'/>
+                className='grid-item-thumbnail'/>
         <LinkOverlay href={`/projects/${id}`}>
           <Text mt={2} fontSize={20}> {title}</Text>
         </LinkOverlay>

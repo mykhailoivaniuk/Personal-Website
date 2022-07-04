@@ -1,4 +1,4 @@
-import { Container,Badge,List,ListItem,Link,Button,Icon } from "@chakra-ui/react";
+import { Container,List,ListItem,Link,Button,Icon } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Title,ProjectImage,Meta } from "../../components/project";
 import P from '../../components/paragraph';
@@ -8,32 +8,36 @@ import {IoLogoGithub} from "react-icons/io";
 
 const Project = () => {
   return (
-    <Layout title='LeetTrack'>
+    <Layout title='Nimble'>
       <Container>
         <Title>
-          LeetTrack
+          Nimble    
           <span display='inline-flex'>
-            <Link href='https://leettrack-411d7.web.app/' target='_blank' isExternal> 
+            <Link href='https://github.com/397-f21/coffee-nimble' target='_blank' isExternal> 
               <Button variant='ghost' colorScheme='purple' rightIcon={<Icon as={IoLogoGithub}/>}>
                 Source
               </Button>
             </Link>
-          </span>
+        </span>
         </Title>
         <P>
-          An app to track your progress across Leetcode problems to be prepared for your coding interview!
+          Nimble is a small tool we built for distributing tasks between team members based on 
+          task difficulty and task priority. We also learned how to setup CI/CD pipeline using Cypress and 
+          Github Actions for automatic testing and deployment.
         </P>
-        <List my={2}>
+        <List my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link href='https://leettrack-411d7.web.app/' isExternal> LeetTrack <ExternalLinkIcon mx='2px'/> </Link>
+            <Link href='https://nimble-1e01f.web.app/' 
+            isExternal> Nimble <ExternalLinkIcon mx='2px'/> </Link>
           </ListItem>
           <ListItem>
             <Meta>Built with</Meta>
-            <span>ReactJS,localStorage</span>
+            <span>React, Firebase, Cypress, Github Actions</span>
           </ListItem>
+        
         </List>
-        <ProjectImage src='/projects/LeetTrack.png' alt='LeetTrack'/>
+        <ProjectImage src='/projects/nimble.png' alt='PacketDissection'/>
       </Container>
     </Layout>
   )
