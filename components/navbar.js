@@ -121,11 +121,13 @@ const Navbar = props => {
                 <NextLink href='/posts' passHref>
                   <MenuItem as={Link}> Posts </MenuItem>
                 </NextLink>
-                <MenuItem as={Link} target='_blank' href='https://drive.google.com/file/d/1LWJcBOtQIHVF_WzOGZAPdRbLx3IqPJPC/view?usp=sharing'>
-                   My CV
+                <MenuItem as={Link} 
+                          target='_blank' 
+                          href='/cv'>
+                   CV
                 </MenuItem>
                 <MenuItem as={Link} target='_blank' href='https://github.com/mykhailoivaniuk/projects'>
-                   My Github
+                   Github
                 </MenuItem>
 
               </MenuList>
