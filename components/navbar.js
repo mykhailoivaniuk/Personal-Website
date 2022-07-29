@@ -79,13 +79,13 @@ const Navbar = props => {
             </LinkItem>
             <LinkItem
               target="_blank"
-              href="https://drive.google.com/file/d/1LWJcBOtQIHVF_WzOGZAPdRbLx3IqPJPC/view?usp=sharing"
+              href="/cv"
               path={path}
               display="inline-flex"
               alignItems="center"
               style={{ gap: 4 }}
               pl={2}> 
-              My CV 
+              CV
             </LinkItem>
             <LinkItem
             target="_blank"
