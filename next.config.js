@@ -4,7 +4,7 @@ module.exports = {
     return [
       {
         source: '/cv',
-        destination: 'https://drive.google.com/file/d/16GF7cvCuQlt01ZXWNN0b6NqMcuHxAT6a/view?usp=sharing',
+        destination: 'https://drive.google.com/file/d/1awCyqfSepFAqVzi69t1jpES9YPR2gkk4/view?usp=sharing',
         permanent: true,
       },
     ]
