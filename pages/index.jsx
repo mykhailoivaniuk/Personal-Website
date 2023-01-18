@@ -71,6 +71,10 @@ const Page = () => {
         </Link> program with Artificial Intelligence track.
       </Paragraph>
       <Paragraph>
+        Right now I&nbsp;m playing around with compilers and large language models. Check out my latest 
+        <Link href="https://kiddo.ai" target="_blank" color="purple.400"> project </Link>.
+      </Paragraph>
+      <Paragraph>
       This wouldn&apos;t have been possible without {' '}
             <Link href='https://www.ugs.foundation/' 
                   isExternal  
