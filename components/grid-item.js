@@ -41,6 +41,23 @@ export const ProjectGridItem = ({children, id, title, thumbnail}) => {
   )
 }
 
+export const PostGridItem = ({children, id, title, thumbnail}) => {
+  return (
+    <Box w='100%' align='center'>
+      <NextLink href={`/posts/${id}`}>
+        <LinkBox cursor='pointer'>
+        <Image src={thumbnail}
+                alt={title}
+                className='grid-item-thumbnail'/>
+        <LinkOverlay href={`/posts/${id}`}>
+          <Text mt={2} fontSize={20}> {title}</Text>
+        </LinkOverlay>
+        <Text fontSize={14} mb={5}>{children}</Text>
+        </LinkBox>
+      </NextLink>
+    </Box>
+  )
+}
 export const TechnologyGridItem = ({title, thumbnail}) => {
   return (
     <Box w='100%' align='center'>

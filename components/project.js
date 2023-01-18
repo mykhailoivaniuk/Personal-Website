@@ -20,6 +20,24 @@ export const Title = ({ children }) => {
   )
 }
 
+export const PostTitle = ({ children }) => {
+  return (
+    <Box>
+      <NextLink href='/posts'>
+        <Link>Posts</Link>
+      </NextLink>
+      <span>
+        &nbsp;
+        <ChevronRightIcon/>
+        &nbsp;
+      </span>
+      <Heading dispaly='inline-block' mb={3} as='h3' fontSize={20}>
+        {children}
+      </Heading>
+    </Box>
+  )
+}
+
 export const ProjectImage = ({ src, alt }) =>{
   return (
     <Image src={src} alt={alt} borderRadius='lg' w='full' mb={3}/>
